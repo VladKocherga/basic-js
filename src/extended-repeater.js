@@ -7,6 +7,9 @@ module.exports = function repeater(str, options) {
   if (options.addition === undefined) {
     options.addition = "";
   }
+  if (options.additionSeparator === undefined) {
+options.additionSeparator = '|';
+}
   let add = options.addition;
   for (let i = 1; i < options.additionRepeatTimes; i++) {
     add = add + options.additionSeparator + options.addition;
